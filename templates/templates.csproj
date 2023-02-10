@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <TargetFramework>net6.0</TargetFramework>
+    <PackageId>SSS.CleanArchitecture.Net6.WebApi</PackageId>
+    <Title>Clean architecture WebApi using Net 6</Title>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="CleanArchitecture.Net6.WebApi\**" Exclude="CleanArchitecture.Net6.WebApi\CleanArchitecture.Net6.WebApi.sln;CleanArchitecture.Net6.WebApi\**\bin\**;CleanArchitecture.Net6.WebApi\**\obj\**;CleanArchitecture.Net6.WebApi\**\.vs\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>

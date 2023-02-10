@@ -1,0 +1,6 @@
+/.vs
+/**/obj
+/**/bin
+
+/Example/Demo/.vs
+/logs

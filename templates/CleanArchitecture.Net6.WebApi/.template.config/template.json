@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Tuan Cao",
+    "classifications": [ "net6", "webapi" ],
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    },
+    "identity": "cleanarchitecture.net6.boileplate",
+    "name": "Clean Architecture WebApi using Net 6",
+    "shortName": "sss.cleanarchitecture.net6.webapi",
+    "sourceName": "CoreApiTemplate",
+    "sources": [
+      {
+        "modifiers": [
+          { "exclude": [ ".vs/**", ".template_config/**", ".git/**" ] }
+        ]
+      }
+    ],
+    "symbols": {
+        "skipRestore": {
+          "type": "parameter",
+          "datatype": "bool",
+          "description": "If specified, skips the automatic restore of the project on create.",
+          "defaultValue": "false"
+        }
+      },
+      "postActions": [
+        {
+          "condition": "(!skipRestore)",
+          "description": "Restore NuGet packages required by this project.",
+          "manualInstructions": [
+            { "text": "Run 'dotnet restore'" }
+          ],
+          "actionId": "f45298b8-90ab-4959-94bd-c3945fd3d5a4",
+          "continueOnError": true
+        }
+      ]
+  }

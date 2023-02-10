@@ -1,0 +1,1 @@
+https://cfrenzel.com/dotnet-new-templating-nuget

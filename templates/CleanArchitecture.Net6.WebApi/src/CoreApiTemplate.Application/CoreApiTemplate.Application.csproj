@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SSS.AspNetCore.Extensions" Version="1.2.12" />
+    <PackageReference Include="SSS.CommonLib" Version="1.2.2" />
+    <PackageReference Include="SSS.EntityFrameworkCore.Extensions" Version="1.2.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\mocks\CoreApiTemplate.Mock\CoreApiTemplate.Mock.csproj" />
+    <ProjectReference Include="..\CoreApiTemplate.Domain\CoreApiTemplate.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
