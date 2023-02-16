@@ -3,4 +3,5 @@ https://cfrenzel.com/dotnet-new-templating-nuget
 
 These libraries are owned by [Success Software Software (SSS)](https://successsoftware.global).
 
-AWS_ACCESS_KEY=fc138c70-59fd-43ee-821a-5b0872d36273
+- AWS_SECRET_ACCESS_KEY=VYHepH2s+p/+fdsfdsfsdfdsfsfdsfsdfsdfsfsdfsdfsdfsd
+- AWS_ACCESS_KEY_ID=DSADSADSADSADADSADSADADSAD
