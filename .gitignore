@@ -4,3 +4,5 @@
 
 /Example/Demo/.vs
 /logs
+/templates/CleanArchitecture.Net7.WebApi/src/CoreApiTemplate.Api/logs/webapi-20221123.log
+/templates/CleanArchitecture.Net7.WebApi/src/CleanArchitecture.Net7.WebApi/appsettings.Development.json

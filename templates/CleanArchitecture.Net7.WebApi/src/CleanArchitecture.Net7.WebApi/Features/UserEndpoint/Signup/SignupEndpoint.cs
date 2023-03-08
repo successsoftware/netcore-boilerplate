@@ -1,0 +1,28 @@
+﻿namespace CleanArchitecture.Net7.WebApi.Features.UserEndpoint
+{
+    public class SignupEndpoint : EndpointWithMapper<SignupRequest, SignupMapper>
+    {
+        private readonly IUserService _userService;
+
+        public SignupEndpoint(IUserService userService)
+        {
+            _userService = userService;
+        }
+
+        public override void Configure()
+        {
+            Post("/user/auth/signup");
+            AllowAnonymous();
+        }
+
+        public override async Task HandleAsync(SignupRequest r, CancellationToken c)
+        {
+            var result = await _userService.CreateAsync(r);
+
+            if (result.IsError)
+                ThrowError(result.Message);
+
+            await SendNoContentAsync(c);
+        }
+    }
+}

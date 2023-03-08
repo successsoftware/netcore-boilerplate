@@ -1,9 +1,9 @@
 <Project>
     <PropertyGroup>
       <Authors>Tuan Cao</Authors>
-      <Description>Clean architecture WebApi using Net 6</Description>
+      <Description>Clean architecture WebApi using Net 7</Description>
       <PackageTags>template dotnet webapi migration</PackageTags>
       <PackageLicense>MIT</PackageLicense>
-      <Version>1.2.0</Version>   
+      <Version>1.0.2</Version>   
     </PropertyGroup>
   </Project>
